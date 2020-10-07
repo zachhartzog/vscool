@@ -1,0 +1,55 @@
+{
+	"folders": [
+		{
+			"path": "..."
+		}
+	],
+	"settings": {
+		"python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+		"editor.fontFamily": "Fira Code",
+		"editor.fontLigatures": true,
+		"workbench.editor.highlightModifiedTabs": true,
+		"explorer.sortOrder": "type",
+		"editor.cursorStyle": "block", //block, block-outline, line, line-thin, underline, or underline-thin
+		"editor.cursorBlinking": "phase",
+		"files.trimFinalNewlines": true,
+		"editor.tabCompletion": "on",
+		"python.formatting.provider": "black",
+		"python.formatting.blackPath": "black",
+		"python.formatting.blackArgs": [
+			"--line-length",
+			"79"
+		],
+		"code-runner.clearPreviousOutput": true,
+		"python.linting.flake8Enabled": true,
+		"python.linting.lintOnSave": true,
+		"python.linting.ignorePatterns": [
+			".vscode/*.py",
+			"**/site-packages/**/*.py"
+		],
+		"python.linting.flake8Args": [
+			"--disable=E501"
+		],
+		"python.analysis.completeFunctionParens": true,
+		"python.autoComplete.addBrackets": true,
+		"python.logging.level": "debug",
+		"git.autoStash": true,
+		"git.fetchOnPull": true,
+		"git.inputValidationSubjectLength": 200,
+		"git.supportCancellation": true,
+		"python.analysis.logLevel": "Trace"
+	  },
+	  "launch": {
+		"configurations": [
+		  {
+			"name": "Python: Current File",
+			"type": "python",
+			"request": "launch",
+			"program": "${file}",
+			"console": "integratedTerminal",
+			"envFile": "${workspaceFolder}/.vscode/.env"
+		  }
+		],
+		"compounds": []
+	  }
+}
